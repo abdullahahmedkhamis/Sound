@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10sp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="audio.ndroid.musicplayerapp.sounds.PlayerActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/played_title"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Aduio title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/icon_music_player"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"/>
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pause_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@drawable/baseline_pause_circle_24"/>
+
+    <Button
+        android:layout_toRightOf="@+id/forword_btn"
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_arrow_back_ios_24"
+        android:text="" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/forword_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toRightOf="@+id/pause_btn"
+        android:background="@drawable/baseline_skip_previous_24"/>
+
+
+
+
+    <Button
+        android:layout_toLeftOf="@+id/next_btn"
+        android:id="@+id/forword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@drawable/baseline_arrow_forward_ios_24"/>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toLeftOf="@+id/pause_btn"
+        android:background="@drawable/baseline_skip_next_24"/>
+
+</RelativeLayout>
+
+
+</LinearLayout>
